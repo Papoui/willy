@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const { TOKEN, PREFIX } = require('./config')
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -6,15 +7,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.channel.send('pong');
-  }
-  else if (msg.content === 'pute') {
-    msg.channel.send('pute');
-  }
-  else if (msg.content === 'salope') {
-    msg.channel.send('salope');
-  }
+  if (msg.content === 'ping') msg.channel.send('pong');
 });
 
-client.login('Njg4NDgzOTQ5ODEwMjg2ODMw.Xm-CoQ.cZmcRzeu4OZ0AOy3hel_r7P27Oc');
+client.login(TOKEN);
