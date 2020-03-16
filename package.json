@@ -1,0 +1,12 @@
+{
+  "name": "willy",
+  "version": "1.0.0",
+  "description": "bot représentant notre bon willy",
+  "main": "main.js",
+  "repository": "https://github.com/Papoui/willy.git",
+  "author": "Papoui <darckrim64@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "discordjs/discord.js"
+  }
+}
